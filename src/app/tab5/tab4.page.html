@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab Threee
+    </ion-title>
+    <form #form="ngForm" (ngSubmit)="logForm(form)">
+      <ion-item>
+        <ion-label>Usuário</ion-label>
+        <ion-input type="text" [(ngModel)]="username" name="usuario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Senha</ion-label>
+        <ion-input type="password" [(ngModel)]="senha" name="senha"></ion-input>
+      </ion-item>
+      <button ion-button type="submit" block>Entrar</button>&nbsp;
+      <button ion-button block>Esqueci minha senha</button>
+    </form> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content></ion-content>

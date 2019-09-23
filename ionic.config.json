@@ -1,0 +1,7 @@
+{
+  "name": "Coleta-rsu-fontend",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
