@@ -8,7 +8,8 @@ const routes: Routes = [
   },
   { path: 'tela-privada', loadChildren: './tela-privada/tela-privada.module#TelaPrivadaPageModule' },
   { path: 'register', loadChildren: './auth/register/register.module#RegisterPageModule' },
-  { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' }
+  { path: 'login', loadChildren: './auth/login/login.module#LoginPageModule' },
+  { path: 'updateUser', loadChildren: './auth/updateUser/updateUser.module#updateUserPageModule' }
 ];
 @NgModule({
   imports: [

@@ -15,17 +15,16 @@ export class LoginPage implements OnInit {
   ngOnInit() {
   }
   login(form) {
-    const jsonForm = JSON.stringify({username: form.value.email, senha: form.value.password});
+    const jsonForm = JSON.stringify({usuario: form.value.email, senha: form.value.password});
     debugger;
-    fetch('/login', {
+    fetch('/usuarios/login', {
       method: 'POST',
       body: jsonForm
     }).then((result) => {
       if (result.status === 200) {
-        window.location.href = 'http://google.com.br';
-      } else {
-        window.localStorage.setItem('ACCESS_TOKEN', 'funciona pa carai');
         this.router.navigateByUrl('tela-privada');
+      } else {
+        alert ("Usuário ou senha incorreto");
       }
     });
     }
